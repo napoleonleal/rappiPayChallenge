@@ -21,6 +21,8 @@ https://rappi-pay-challenge-nleal.herokuapp.com/
 * Incovenientes:
 - De primera instancia se trato de hacer una full app mas elaborada como se ve en el repo:
 
+https://github.com/napoleonleal/RappiPayChallengeFail
+
 pero al persisitir los errores y el tiempo corriendo decidi empezar de cero y hacer un proyecto mas sencillo y llamar la API
 
 - Se utilizo One-Hot Encoding en lugar de LabelEncoder ya que es lo que tengo entendido que aumenta mas las metricas/performance de los modelos pero al momento de querer hacer predicciones en API no encontre manera de poder darle un Input parecido al del dataset original y poder hacer predicciones es por eso que la API recibe las columnas dummy de igual manera con 1/0
