@@ -19,6 +19,12 @@ def predict_api():
     output=xgmodel.predict(data2)
     return str(output)
 
+@app.route('/predict', methods=['POST'])
+def predict():
+  data=[float(x) for x in request.form.values()]
+  data2 = pd.DataFrame(data).T
+  output = xgmodel.predict(data2)
+  return render_template("home.html", prediction_text=f'The prediction of this user to make fraud is {bool(output)} according to the model.')
 
 if __name__ == '__main__':
   app.run(debug=True)

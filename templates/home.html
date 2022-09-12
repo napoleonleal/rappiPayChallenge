@@ -1,1 +1,61 @@
-<h1>hello world</h1>
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Boston House Price Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+      <input type="text" name="linea_tc" placeholder="linea_tc" required="required" /><br>
+    	<input type="text" name="interes_tc" placeholder="interes_tc" required="required" /><br>
+        <input type="text" name="monto" placeholder="monto" required="required" /><br>
+        <input type="text" name="hora" placeholder="hora" required="required" /><br>
+        <input type="text" name="is_prime" placeholder="is_prime" required="required" /><br>
+        <input type="text" name="genero_M" placeholder="genero_M" required="required" /><br>
+        <input type="text" name="genero_N" placeholder="genero_N" required="required" /><br>
+        <input type="text" name="establecimiento_Compra en línea" placeholder="establecimiento_Compra en línea" required="required" /><br>
+        <input type="text" name="establecimiento_Farmacia" placeholder="establecimiento_Farmacia" required="required" /><br>
+        <input type="text" name="establecimiento_Supermercado" placeholder="establecimiento_Supermercado" required="required" /><br>
+        <input type="text" name="establecimiento_Tienda departamental" placeholder="establecimiento_Tienda departamental" required="required" /><br>
+        <input type="text" name="establecimiento_Unknown" placeholder="establecimiento_Unknown" required="required" /><br>
+        <input type="text" name="ciudad_Ciudad de México" placeholder="ciudad_Ciudad de México" required="required" /><br>
+        <input type="text" name="ciudad_Guadalajara" placeholder="ciudad_Guadalajara" required="required" /><br>
+        <input type="text" name="ciudad_Monterrey" placeholder="ciudad_Monterrey" required="required" /><br>
+        <input type="text" name="ciudad_Nezahualcóyotl" placeholder="ciudad_Nezahualcóyotl" required="required" /><br>
+        <input type="text" name="ciudad_Tijuana" placeholder="ciudad_Tijuana" required="required" /><br>
+        <input type="text" name="ciudad_Toluca" placeholder="ciudad_Toluca" required="required" /><br>
+        <input type="text" name="status_txn_En proceso" placeholder="status_txn_En proceso" required="required" /><br>
+        <input type="text" name="status_txn_Rechazada" placeholder="status_txn_Rechazada" required="required" /><br>
+        <input type="text" name="marca_Huawei" placeholder="marca_Huawei" required="required" /><br>
+        <input type="text" name="marca_Motorola" placeholder="marca_Motorola" required="required" /><br>
+        <input type="text" name="marca_Samsung" placeholder="marca_Samsung" required="required" /><br>
+        <input type="text" name="proveedor_Movistar" placeholder="proveedor_Movistar" required="required" /><br>
+        <input type="text" name="proveedor_Telcel" placeholder="proveedor_Telcel" required="required" /><br>
+
+
+       
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+  
+   
+ </div>
+ {{prediction_text}}
+
+</body>
+</html>
