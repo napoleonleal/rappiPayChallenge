@@ -14,35 +14,35 @@
 
 <body>
  <div class="login">
-	<h1>Boston House Price Prediction</h1>
+	<h1>RappiPay Transaction Fraud Prediction with XGBClassifier</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-      <input type="text" name="linea_tc" placeholder="linea_tc" required="required" /><br>
-    	<input type="text" name="interes_tc" placeholder="interes_tc" required="required" /><br>
-        <input type="text" name="monto" placeholder="monto" required="required" /><br>
-        <input type="text" name="hora" placeholder="hora" required="required" /><br>
-        <input type="text" name="is_prime" placeholder="is_prime" required="required" /><br>
-        <input type="text" name="genero_M" placeholder="genero_M" required="required" /><br>
-        <input type="text" name="genero_N" placeholder="genero_N" required="required" /><br>
-        <input type="text" name="establecimiento_Compra en línea" placeholder="establecimiento_Compra en línea" required="required" /><br>
-        <input type="text" name="establecimiento_Farmacia" placeholder="establecimiento_Farmacia" required="required" /><br>
-        <input type="text" name="establecimiento_Supermercado" placeholder="establecimiento_Supermercado" required="required" /><br>
-        <input type="text" name="establecimiento_Tienda departamental" placeholder="establecimiento_Tienda departamental" required="required" /><br>
-        <input type="text" name="establecimiento_Unknown" placeholder="establecimiento_Unknown" required="required" /><br>
-        <input type="text" name="ciudad_Ciudad de México" placeholder="ciudad_Ciudad de México" required="required" /><br>
-        <input type="text" name="ciudad_Guadalajara" placeholder="ciudad_Guadalajara" required="required" /><br>
-        <input type="text" name="ciudad_Monterrey" placeholder="ciudad_Monterrey" required="required" /><br>
-        <input type="text" name="ciudad_Nezahualcóyotl" placeholder="ciudad_Nezahualcóyotl" required="required" /><br>
-        <input type="text" name="ciudad_Tijuana" placeholder="ciudad_Tijuana" required="required" /><br>
-        <input type="text" name="ciudad_Toluca" placeholder="ciudad_Toluca" required="required" /><br>
-        <input type="text" name="status_txn_En proceso" placeholder="status_txn_En proceso" required="required" /><br>
-        <input type="text" name="status_txn_Rechazada" placeholder="status_txn_Rechazada" required="required" /><br>
-        <input type="text" name="marca_Huawei" placeholder="marca_Huawei" required="required" /><br>
-        <input type="text" name="marca_Motorola" placeholder="marca_Motorola" required="required" /><br>
-        <input type="text" name="marca_Samsung" placeholder="marca_Samsung" required="required" /><br>
-        <input type="text" name="proveedor_Movistar" placeholder="proveedor_Movistar" required="required" /><br>
-        <input type="text" name="proveedor_Telcel" placeholder="proveedor_Telcel" required="required" /><br>
+      <input type="text" name="Limite TC(0-99000)" placeholder="Limite TC(0-99000)" required="required" /><br>
+    	<input type="text" name="Tasa Interes TC(0-100)" placeholder="Tasa Interes TC(0-100)" required="required" /><br>
+        <input type="text" name="Monto de transaccion" placeholder="Monto de transaccion" required="required" /><br>
+        <input type="text" name="Hora de transaccion(0-23)" placeholder="Hora de transaccion(0-23)" required="required" /><br>
+        <input type="text" name="is_prime(1,0)" placeholder="is_prime(1,0)" required="required" /><br>
+        <input type="text" name="Genero F(1,0)" placeholder="Genero F(1,0)" required="required" /><br>
+        <input type="text" name="Genero Otro(1,0)" placeholder="Genero Otro(1,0)" required="required" /><br>
+        <input type="text" name="Compra en línea(1,0)" placeholder="Compra en línea(1,0)" required="required" /><br>
+        <input type="text" name="Compra en Farmacia(1,0)" placeholder="Compra en Farmacia(1,0)" required="required" /><br>
+        <input type="text" name="Compra en Supermercado(1,0)" placeholder="Compra en Supermercado(1,0)" required="required" /><br>
+        <input type="text" name="Compra en Tienda departamental(1,0)" placeholder="Compra en Tienda departamental(1,0)" required="required" /><br>
+        <input type="text" name="Compra en lugar desconocido(1,0)" placeholder="Compra en lugar desconocido(1,0)" required="required" /><br>
+        <input type="text" name="Ciudad de México(1,0)" placeholder="Ciudad de México(1,0)" required="required" /><br>
+        <input type="text" name="Guadalajara(1,0)" placeholder="Guadalajara(1,0)" required="required" /><br>
+        <input type="text" name="Monterrey(1,0)" placeholder="Monterrey(1,0)" required="required" /><br>
+        <input type="text" name="Nezahualcóyotl(1,0)" placeholder="Nezahualcóyotl(1,0)" required="required" /><br>
+        <input type="text" name="Tijuana(1,0)" placeholder="Tijuana(1,0)" required="required" /><br>
+        <input type="text" name="Toluca(1,0)" placeholder="Toluca(1,0)" required="required" /><br>
+        <input type="text" name="Txn En proceso(1,0)" placeholder="Txn En proceso(1,0)" required="required" /><br>
+        <input type="text" name="Txn_Rechazada(1,0)" placeholder="Txn_Rechazada(1,0)" required="required" /><br>
+        <input type="text" name="Marca Huawei(1,0)" placeholder="Marca Huawei(1,0)" required="required" /><br>
+        <input type="text" name="Marca Motorola(1,0)" placeholder="Marca Motorola(1,0)" required="required" /><br>
+        <input type="text" name="Marca Samsung(1,0)" placeholder="Marca Samsung(1,0)" required="required" /><br>
+        <input type="text" name="Proveedor Movistar(1,0)" placeholder="Proveedor Movistar(1,0)" required="required" /><br>
+        <input type="text" name="Proveedor Telcel(1,0)" placeholder="Proveedor Telcel(1,0)" required="required" /><br>
 
 
        
